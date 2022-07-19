@@ -183,14 +183,40 @@ nav {
 }
 .modal__half {
     width: 50%;
+    padding: 40px 72px;
 }
 .modal__about {
     background-color: #f4ede8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .modal__contact {
     background-color: #8C7C6F;
     color: #f4ede8;
+}
+.modal__languages {
+    display: flex;
+    /* flex-wrap: wrap; to start a new row */
+}
+
+.modal__language {
+    width: 25%;
+    padding: 16px;
+
+}
+.modal__language--img {
+    width: 100%;
+}
+.modal__title {
+    font-size: 26px;
+}
+.modal__sub-title {
+    margin: 8px 0 16px 0;
+}
+.modal__para {
+    margin-bottom: 32px;
 }
 
 
