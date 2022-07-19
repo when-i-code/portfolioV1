@@ -52,6 +52,9 @@ a {
 .secondary-color {
     color:#8C7C6F
 }
+.hightlight {
+    color: #B56830;
+}
 .header__para {
     color: #231E1A;
 }
@@ -204,7 +207,20 @@ nav {
 .modal__language {
     width: 25%;
     padding: 16px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.modal__language:hover .language__name {
+    transform: scale(1);
+}
+.language__name {
+    font-size: 14px;
+    position: absolute;
+    bottom: -10px;
+    transform: scale(0);
+    transition: all 500ms ease;
 }
 .modal__language--img {
     width: 100%;
