@@ -217,6 +217,7 @@ nav {
 }
 .language__name {
     font-size: 14px;
+    font-weight: 600;
     position: absolute;
     bottom: -10px;
     transform: scale(0);
@@ -224,6 +225,12 @@ nav {
 }
 .modal__language--img {
     width: 100%;
+    transform: scale(1);
+    transition: all 500ms ease;
+}
+.modal__language--img:hover {
+    transform: scale(0.9);
+    filter: brightness(85%);
 }
 .modal__title {
     font-size: 26px;
