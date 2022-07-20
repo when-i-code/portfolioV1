@@ -32,7 +32,9 @@ textarea {
 label {
     font-size: 12px;
     font-weight: bold;
-
+}
+input:hover, textarea:hover {
+    border-color: #dd7226;
 }
 .container {
     padding: 50px 0;
@@ -76,7 +78,7 @@ a {
     color:#8C7C6F
 }
 .hightlight {
-    color: #B56830;
+    color: #dd7226;
 }
 .header__para {
     color: #231E1A;
@@ -213,10 +215,10 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 .modal__about {
     background-color: #f4ede8;
-    
 }
 
 .modal__contact {
@@ -286,14 +288,16 @@ nav {
     height: 36px;
     background-color: transparent;
     box-shadow: inset 0 0 0 0 #E1D9D1;
-    transition: ease-out 0.3s;
+    transition: all 600ms ease;
 }
 .form__submit:hover {
     box-shadow: inset 160px 0 0 0 #E1D9D1;
     color: #2D2723;
-
 }
-
+.form__submit:active {
+    border-color: #dd7226;
+    color: #dd7226;
+}
 /* .form__submit::after {
     content: "";
     position: absolute;
@@ -313,6 +317,33 @@ nav {
     border: 2px solid #E1D9D1;
 
 } */
+
+.modal__overlay--loading {
+    background-color:#dd7226;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.fa-spinner {
+    animation: spinner 850ms infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 
 /* PROJECTS */
