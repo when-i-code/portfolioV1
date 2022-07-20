@@ -284,29 +284,35 @@ nav {
     width: 100%;
     max-width: 160px;
     height: 36px;
-    background: transparent;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0 #E1D9D1;
+    transition: ease-out 0.3s;
 }
-
-.form__submit::after {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: #E1D9D1;
+.form__submit:hover {
+    box-shadow: inset 160px 0 0 0 #E1D9D1;
     color: #2D2723;
 
+}
+
+/* .form__submit::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: #E1D9D1;
     transition: all 300ms ease;
 
 }
 .form__submit:hover::after {
-    
     height: 100%;
     width: 100%;
     color: #2D2723;
-    bottom: 100%;
-}
+    border: 2px solid #E1D9D1;
+
+} */
 
 
 /* PROJECTS */
