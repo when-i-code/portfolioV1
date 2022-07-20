@@ -328,6 +328,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 .modal__overlay--loading {
     background-color:#8C7C6F;
@@ -342,7 +343,9 @@ nav {
     text-align: center;
     padding: 32px;
     color: #f4ede8;
-
+}
+.modal__overlay--visible {
+    z-index: 1;
 }
 .fa-spinner {
     animation: spinner 850ms infinite;
