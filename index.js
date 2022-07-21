@@ -2,6 +2,18 @@
 // service_zafgk5f
 // C1Fwgybb8FQ_s2Bkt
 
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if(contrastToggle) {
+        document.body.classList += ' dark-theme'
+    } else {
+        document.body.classList.remove('dark-theme');
+    }
+}
+
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
