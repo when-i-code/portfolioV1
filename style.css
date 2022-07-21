@@ -137,6 +137,10 @@ nav,
     background-color: #E1D9D1;
     color: #231E1A;
 }
+.dark-theme #personal-logo,
+.dark-theme .footer__logo--img {
+    filter:brightness(2)
+}
 
 /* LANDING PAGE */
 
@@ -185,9 +189,9 @@ nav,
     font-size: 30px;
     position: fixed;
     cursor: pointer;
-    position: absolute;
     bottom: 32px;
     right: 32px;
+    z-index: 100;
 }
 #header-photo {
     width: 400px;
