@@ -210,6 +210,7 @@ nav {
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    /* transition: visibility 1s, z-index 1s, box-shadow 0.5s ease; */
 }
 .modal--open .modal {
     box-shadow: 0 5px 20px #2D2723;
