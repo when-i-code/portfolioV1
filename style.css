@@ -36,10 +36,6 @@ label {
 input:hover, textarea:hover {
     border-color: #dd7226;
 }
-.modal--open {
-box-shadow: 0 5px 20px #2D2723;
-
-}
 
 .container {
     padding: 50px 0;
@@ -215,6 +211,12 @@ nav {
     display: flex;
     visibility: hidden;
 }
+.modal--open .modal {
+    box-shadow: 0 5px 20px #2D2723;
+    z-index: 60;
+    visibility: visible;
+    }
+    
 .modal__half {
     width: 50%;
     padding: 40px 72px;

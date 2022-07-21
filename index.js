@@ -24,5 +24,6 @@ function contact(event) {
 }
 
 function toggleModal() {
-    
+    document.body.classList += ' modal--open';
+    console.log('toggle modal works')
 }
