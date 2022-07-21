@@ -137,6 +137,9 @@ nav,
     background-color: #E1D9D1;
     color: #231E1A;
 }
+.dark-theme .link__hover-effect::after {
+    background-color: #E1D9D1;
+}
 .dark-theme #personal-logo,
 .dark-theme .footer__logo--img {
     filter:brightness(2)
