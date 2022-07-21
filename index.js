@@ -22,3 +22,7 @@ function contact(event) {
             alert ('The email service is temporarily unavailable. Please contact me directly on adrianasavastre@gmail.com')
         })
 }
+
+function toggleModal() {
+    
+}
