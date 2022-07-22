@@ -6,7 +6,7 @@ let contrastToggle = false;
 
 function toggleContrast() {
     contrastToggle = !contrastToggle;
-    if(contrastToggle) {
+    if (contrastToggle) {
         document.body.classList += ' dark-theme'
     } else {
         document.body.classList.remove('dark-theme');
@@ -31,13 +31,13 @@ function contact(event) {
             success.classList += ' modal__overlay--visible'
         }).catch(() => {
             loading.classList.remove('modal__overlay--visible');
-            alert ('The email service is temporarily unavailable. Please contact me directly on adrianasavastre@gmail.com')
+            alert('The email service is temporarily unavailable. Please contact me directly on adrianasavastre@gmail.com')
         })
 }
 let isModalOpen = false;
 function toggleModal() {
-    
-    if(isModalOpen) {
+
+    if (isModalOpen) {
         isModalOpen = false;
         return document.body.classList.remove('modal--open');
     }
