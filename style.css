@@ -609,8 +609,7 @@ footer {
 /* Making code responsive to smart phones and tablets */
 
 @media (max-width: 768px) {
-    .header-photo,
-    .nav__link--list ul:nth-child(1) {
+    .header-photo, .nav__link--list li:nth-child(-n+3) {
         visibility: hidden;
         display: none;
     }
